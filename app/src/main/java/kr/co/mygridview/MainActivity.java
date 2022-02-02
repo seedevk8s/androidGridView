@@ -53,6 +53,23 @@ public class MainActivity extends AppCompatActivity {
                             R.drawable.mov71, R.drawable.mov72, R.drawable.mov73, R.drawable.mov74, R.drawable.mov75,
                             R.drawable.mov76, R.drawable.mov77, R.drawable.mov78, R.drawable.mov79, R.drawable.mov80,
                             R.drawable.mov81, R.drawable.mov82, R.drawable.mov83};
+        String[] posterTitle = {"토이스토리1", "호빗2", "제이슨 본3", "반지의 왕4", "정직한 후보5",
+                                "토이스토리6", "호빗7", "제이슨 본8", "반지의 왕9", "정직한 후보10",
+                                "토이스토리11", "호빗12", "제이슨 본13", "반지의 왕14", "정직한 후보15",
+                                "토이스토리16", "호빗17", "제이슨 본18", "반지의 왕19", "정직한 후보20",
+                                "토이스토리21", "호빗22", "제이슨 본23", "반지의 왕24", "정직한 후보25",
+                                "토이스토리26", "호빗27", "제이슨 본28", "반지의 왕29", "정직한 후보30",
+                                "토이스토리31", "호빗32", "제이슨 본33", "반지의 왕34", "정직한 후보35",
+                                "토이스토리36", "호빗37", "제이슨 본38", "반지의 왕39", "정직한 후보40",
+                                "토이스토리41", "호빗42", "제이슨 본43", "반지의 왕44", "정직한 후보45",
+                                "토이스토리46", "호빗47", "제이슨 본48", "반지의 왕49", "정직한 후보50",
+                                "토이스토리51", "호빗52", "제이슨 본53", "반지의 왕54", "정직한 후보55",
+                                "토이스토리56", "호빗57", "제이슨 본58", "반지의 왕59", "정직한 후보60",
+                                "토이스토리61", "호빗62", "제이슨 본63", "반지의 왕64", "정직한 후보65",
+                                "토이스토리66", "호빗67", "제이슨 본68", "반지의 왕69", "정직한 후보70",
+                                "토이스토리71", "호빗72", "제이슨 본73", "반지의 왕74", "정직한 후보75",
+                                "토이스토리76", "호빗77", "제이슨 본78", "반지의 왕79", "정직한 후보80",
+                                "토이스토리81", "호빗82", "제이슨 본83"};
 
         @Override
         public int getCount() {
@@ -88,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                     ImageView ivPoster = dialogView.findViewById(R.id.ivPoster);
                     ivPoster.setImageResource(posterID[pos]);
 
-                    dlg.setTitle("큰 포스터");
+                    dlg.setTitle(posterTitle[i]);
                     dlg.setIcon(R.drawable.ic_launcher);
                     dlg.setView(dialogView);
                     dlg.setNegativeButton("닫기", null);
